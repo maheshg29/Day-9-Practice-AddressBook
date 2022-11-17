@@ -25,6 +25,10 @@
             Console.WriteLine("Email Address:");
             string email = Console.ReadLine();
             addressBook.addContact(firstName, lastName, address, city, state, zip, phoneNumber, email);
+
+            Console.WriteLine("Enter First Name of the Contact You Want to Edit.:");
+            string fName = Console.ReadLine();
+            addressBook.editContact(fName);
         }
     }
 }
