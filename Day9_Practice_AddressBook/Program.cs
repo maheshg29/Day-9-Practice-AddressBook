@@ -29,6 +29,10 @@
             Console.WriteLine("Enter First Name of the Contact You Want to Edit.:");
             string fName = Console.ReadLine();
             addressBook.editContact(fName);
+
+            Console.WriteLine("Enter serial number  of the Contact You Want to Delete.:");
+            int srnumber = Convert.ToInt32(Console.ReadLine());
+            addressBook.deleteContact(srnumber);
         }
     }
 }

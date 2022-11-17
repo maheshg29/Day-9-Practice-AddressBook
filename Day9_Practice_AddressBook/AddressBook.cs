@@ -21,6 +21,12 @@ namespace Day9_Practice_AddressBook
 
         }
 
+        public void deleteContact(int srnumber)
+        {
+
+            this.ContactList.RemoveAt(srnumber);
+        }
+
         public void editContact(string fName)
         {
             foreach (var contact in ContactList)
